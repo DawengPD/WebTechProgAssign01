@@ -1,0 +1,57 @@
+body{
+background-image: url('5199419.jpg');
+background-size: cover;
+padding: 0;
+margin: 0;
+}
+
+#myPage{
+  background-image: url('hd turtle wallpaper with a swimming turtle underwater hd turtles.jpg');
+  background-position: bottom center ;
+  background-size: auto;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  background-attachment: fixed;
+}
+
+h1{
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  color: #333;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+a{
+     font-weight: bold;
+     text-decoration: none;
+     color: red;
+   }
+
+.Intro{
+  padding-top: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #D3D3D3;
+}
+
+.navLink {
+    list-style-type: none;
+    padding: 10px;
+    margin : 0px;
+    display: flex;
+    background-color: #eb932b;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+Section{
+      background-color: rgba(0, 255, 191, 0.5);
+      background-size: 200px, 300px;
+      padding: 10px;
+      margin: 100px;
+}
