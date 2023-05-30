@@ -10,7 +10,7 @@
          <div class="menulink">
            <img src="f754d7872ce12572f8f010ec858019ea.jpg" class="logo">
             <nav>
-              <ul>
+              <ul id="menuList">
                       <li> <a href="Catergoies.html">Turtle Catergoies</a></li>
                       <li> <a href="Hikkaduwa.html">Hikkaduwa Turtle Hatcheries</a></li>
                       <li><a href="Threats to Turtles.html">Threats To Turtles</a></li>
@@ -18,17 +18,20 @@
                       <li><a href="P&D.html">Purchase & Donate Page</a></li>
               </ul>
             </nav>
-            <img src="hamburger-menu-icon-svg-17.jpg" class="menuimg">
+            <img src="hamburger-menu-icon-svg-17.jpg" class="menuimg" onclick="togglemenu()">
          </div>
     </div>
-    <div class="line">
+    <div id="mainContainer">
+      <div class="line">
+      </div>
     </div>
+
   </header>
   <div class="notFooter">
   <h1>Threats to Turtles</h1>
 
   <h2>Threat 1: Habitat Loss and Degradation</h2>
-  <img src="habitat loss.jpg" alt="Threats to Turtles">
+  <img src="habitat loss.jpg" alt="Threats to Turtles" class="bigclass">
 
   <p>
     Habitat loss and degradation pose a significant threat to turtle populations around the world. Coastal development, urbanization, pollution, and climate change are some of the leading causes of habitat destruction. As turtles rely on specific nesting beaches and feeding grounds, the alteration or destruction of these habitats can have severe consequences.
@@ -49,7 +52,7 @@
   </p>
 
   <h2>Threat 2: Pollution</h2>
-  <img src="turtle in trash.jpg" class="">
+  <img src="turtle in trash.jpg" class="smallimg">
 
  <p>
    Pollution, including marine debris, oil spills, and chemical contaminants, poses a significant threat to turtle populations. These pollutants can directly harm turtles through ingestion or entanglement, as well as indirectly impact their habitats and food sources.
@@ -72,18 +75,53 @@
   <h2>Threat 3: Illegal Wildlife Trade</h2>
   <img src="illegal trade.jpg" alt="">
 
-  <h2>Other Hatcheries</h2>
-  <ul>
-    <li><a href="kosgoda.html" id="linka"><img src="kosgoda hatcheries.jpg" alt="Kosgoda Hatchery"> Kosgoda Hatchery</a></li>
-    <li><a href="bentota.html" id="linkb">Bentota Hatchery</a></li>
-  </ul>
+   <p>
+    Illegal wildlife trade poses a significant threat to turtle populations worldwide. Turtles are often sought after for their meat, shells, and eggs, which are used in traditional medicine, food, or sold as exotic pets. This trade occurs both domestically and internationally, driven by demand in various regions.
+  </p>
+
+   <h3>Consequences of Illegal Wildlife Trade:</h3>
+   <p>
+    Illegal turtle harvesting causes population declines and ecological imbalances, disrupting marine ecosystems and pushing species towards extinction. The trade also involves animal cruelty, with turtles suffering injuries and mortality during transportation.
+   </p>
+
+   <h3>Prevention:</h3>
+   <p>
+    To combat illegal wildlife trade, it is crucial to strengthen legislation by enacting and enforcing strict laws with harsh penalties. International cooperation should be fostered to intercept smuggling operations and dismantle trafficking networks. Public awareness campaigns and community involvement are essential to educate the public, promote responsible choices, and provide alternative livelihood options for local communities.
+   </p>
+
+   <p>
+     To learn more, visit organizations like the <a href="https://turtlesurvival.org">Turtle Survival Alliance</a>  and <a href="https://cites.org/eng">CITES</a> .
+   </p>
+
+  <div class="hatchLink">
+    <h2>Other Hatcheries</h2>
+    <ul>
+      <li id="linka"><a href="kosgoda.html"><h2>Kosgoda Hatchery</h2></a></li>
+      <li id="linkb"><a href="bentota.html"><h2>Bentota Hatchery</h2></a></li>
+    </ul>
+  </div>
+
   </div>
   <footer class="footer">
       <p>&copy; 2023 Daweng Pam. All rights reserved.</p>
       <p>Contact us at info@slturtles.org</p>
   </footer>
+  <script>
+       var menuList = document.getElementById("menuList");
+       var mainContainer = document.getElementById("mainContainer");
+
+       menuList.style.maxHeight = "0%";
+
+       function togglemenu(){
+       if(menuList.style.maxHeight == "0%") {
+       menuList.style.maxHeight = "150px";
+       mainContainer.style.marginTop = "200px";
+       }
+       else {
+      menuList.style.maxHeight = "0%";
+      mainContainer.style.marginTop = "0px";
+      }
+     }
+  </script>
 </body>
-
-
-
 </html>

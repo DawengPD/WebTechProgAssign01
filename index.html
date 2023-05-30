@@ -12,7 +12,7 @@
            <div class="menulink">
              <img src="f754d7872ce12572f8f010ec858019ea.jpg" class="logo">
               <nav>
-                <ul>
+                <ul id="menuList">
                         <li> <a href="Catergoies.html">Turtle Catergoies</a></li>
                         <li> <a href="Hikkaduwa.html">Hikkaduwa Turtle Hatcheries</a></li>
                         <li><a href="Threats to Turtles.html">Threats To Turtles</a></li>
@@ -20,27 +20,28 @@
                         <li><a href="P&D.html">Purchase & Donate Page</a></li>
                 </ul>
               </nav>
-              <img src="hamburger-menu-icon-svg-17.jpg" class="menuimg">
+              <img src="hamburger-menu-icon-svg-17.jpg" class="menuimg" onclick="togglemenu()">
            </div>
       </div>
-      <div class="line">
+      <div id="mainContainer">
+        <div class="line">
+        </div>
+        <div class="Intro">
+          <h4>
+           Hello and Welcome to our website all about Sri Lankan turtles!<br>
+          <p>Did you know that Sri Lanka is home to five of the seven types of sea turtles in the whole world?
+          That's pretty cool, right? These turtles come to our island every year to lay their eggs on our sandy beaches.
+          But unfortunately, turtles are in trouble because people are doing things like cutting down their homes,
+          catching them, and making the ocean dirty. So, we made this website to teach you all about Sri Lankan turtles and how you can help protect them.<p>
+          <br>Come join us and learn all about these awesome creatures!
+          </h4>
+        </div>
       </div>
-      <div class="Intro">
-        <h4>
-         Hello and Welcome to our website all about Sri Lankan turtles!<br>
-        <p>Did you know that Sri Lanka is home to five of the seven types of sea turtles in the whole world?
-        That's pretty cool, right? These turtles come to our island every year to lay their eggs on our sandy beaches.
-        But unfortunately, turtles are in trouble because people are doing things like cutting down their homes,
-        catching them, and making the ocean dirty. So, we made this website to teach you all about Sri Lankan turtles and how you can help protect them.<p>
-        <br>Come join us and learn all about these awesome creatures!
-        </h4>
-      </div>
+
     </header>
   <div id="notHead">
     <div class="row">
-      <div class="img">
-        <img src="turtles with sri lankan inage.jpg" alt="" class="firstimg">
-      </div>
+        <img src="sri lank image.jpg" alt="" class="firstimg">
       <section class="mySectiona">
         <header class="sect_title">
           <h2>Meet the Five Species of Sea Turtles in Sri Lanka</h2>
@@ -56,7 +57,7 @@
              <li> The Loggerhead Turtle</li>
            </ol>
            <p>The Green Turtle is the largest of the species found in Sri Lanka and is easily recognizable by its green skin and large body size
-           The Olive Ridley Turtle is the smallest and is named after its olive-colored shell.
+           TheBentota-view-from-upper.jpg Olive Ridley Turtle is the smallest and is named after its olive-colored shell.
            The Hawksbill Turtle is known for its beautiful, colorful shell and is critically endangered.
            The Leatherback Turtle is the largest turtle in the world and can weigh over 900 kilograms.
            Finally, the Loggerhead Turtle is named after its large head and powerful jaws, which help it to eat hard-shelled prey.
@@ -65,9 +66,7 @@
       </section>
     </div>
    <div class="row">
-     <div class="img">
        <img src="plastic turtle 1.jpg" alt="" class="secondimg">
-     </div>
      <section class="mySectionb">
        <header class="sect_title">
          <h2>Sri Lanka's Sea Turtles Under Threat</h2>
@@ -82,9 +81,7 @@
      </section>
    </div>
    <div class="row">
-     <div class="img">
-       <img src="more for the kosgado hatch.jpg" alt="" class="thirdimg">
-     </div>
+       <img src="turtlehatcheriesimg.jpg" alt="" class="thirdimg">
      <section>
      <div class="mySectionc">
        <header class="sect_title">
@@ -114,6 +111,22 @@
 <a href="https://www.instagram.com/"><img src="instalogo.png" alt="instalogo"></a>
 </div>
 </footer>
-  </body>
+<script>
+     var menuList = document.getElementById("menuList");
+     var mainContainer = document.getElementById("mainContainer");
 
+     menuList.style.maxHeight = "0%";
+
+     function togglemenu(){
+     if(menuList.style.maxHeight == "0%") {
+     menuList.style.maxHeight = "150px";
+     mainContainer.style.marginTop = "200px";
+     }
+     else {
+    menuList.style.maxHeight = "0%";
+    mainContainer.style.marginTop = "0px";
+    }
+   }
+</script>
+  </body>
 </html>

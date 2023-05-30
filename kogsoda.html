@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dual.css">
-  <!-- For the Bentota page, change the CSS file to "bentota.css" -->
   <title>Turtle Hatchery</title>
 </head>
 <body>
@@ -13,7 +12,7 @@
          <div class="menulink">
            <img src="f754d7872ce12572f8f010ec858019ea.jpg" class="logo">
             <nav>
-              <ul>
+              <ul id="menuList">
                       <li> <a href="Catergoies.html">Turtle Catergoies</a></li>
                       <li> <a href="Hikkaduwa.html">Hikkaduwa Turtle Hatcheries</a></li>
                       <li><a href="Threats to Turtles.html">Threats To Turtles</a></li>
@@ -21,11 +20,14 @@
                       <li><a href="P&D.html">Purchase & Donate Page</a></li>
               </ul>
             </nav>
-            <img src="hamburger-menu-icon-svg-17.jpg" class="menuimg">
+            <img src="hamburger-menu-icon-svg-17.jpg" class="menuimg" onclick="togglemenu()">
          </div>
     </div>
-    <div class="line">
+    <div id="mainContainer">
+      <div class="line">
+      </div>
     </div>
+  </header>
   <main>
     <section>
       <h1>Welcome to Kosgoda Turtle Hatchery</h1>
@@ -41,7 +43,7 @@
 
     <section>
       <h2>Visiting Us</h2>
-      <img src="visiting_image.jpg" alt="Visiting Image">
+      <img src="visit.jpg" alt="Visiting Image">
       <p>Visitors are welcome to observe the hatchery, learn about sea turtles, and participate in the release of baby turtles.</p>
     </section>
   </main>
@@ -56,5 +58,22 @@
   <a href="https://www.instagram.com/"><img src="instalogo.png" alt="instalogo"></a>
   </div>
   </footer>
+  <script>
+       var menuList = document.getElementById("menuList");
+       var mainContainer = document.getElementById("mainContainer");
+
+       menuList.style.maxHeight = "0%";
+
+       function togglemenu(){
+       if(menuList.style.maxHeight == "0%") {
+       menuList.style.maxHeight = "150px";
+       mainContainer.style.marginTop = "200px";
+       }
+       else {
+      menuList.style.maxHeight = "0%";
+      mainContainer.style.marginTop = "0px";
+      }
+     }
+  </script>
 </body>
 </html>
